@@ -1,0 +1,16 @@
+<div id="bg-h">
+    <div id="nav">
+        <div id="plc-img">
+            <img src="../../assets/img/favicon-d.png" height="150" width="150">
+        </div>  
+        <div id="nav-menu" [ngClass]="{'mobile_menu': menuOpen}">
+            <ul id="pos-nav-menu">
+                <li routerLink="">Accueil</li>
+                <li routerLink="a-propos">A Propos</li>
+                <li routerLink="contact">Contact</li>
+            </ul>
+        </div>
+        <img id="burgerMenu" src="../../assets/img/burger-bar (1).png" height="60" width="60" (click)="toggleMenu()">
+    </div>
+</div>
+

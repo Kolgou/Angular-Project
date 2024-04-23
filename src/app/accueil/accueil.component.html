@@ -1,0 +1,43 @@
+<div class="contenu-de-la-page">
+  <div id="plcm-info-accueil">
+      <div class="card w-75 mb-3">
+          <div class="card-body">
+              <h3 class="card-title">Notre Histoire</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet elit at lectus iaculis, a elementum dui dignissim. 
+                  Nulla lacinia, eros ut molestie laoreet, sapien orci ornare leo, ac cursus mi lectus molestie arcu. Aenean in augue elementum, laoreet nulla sed, pulvinar justo. 
+                  Morbi ac purus vitae nisi maximus dignissim. Nam quam sapien, mattis a elit in, porttitor finibus nisl. Mauris leo metus, tempor vitae tempus et, lacinia sit amet augue. 
+                  Quisque at enim cursus ligula suscipit pretium. Sed tincidunt ultrices enim, eget accumsan ligula lobortis ac. 
+                  Nullam arcu nisl, accumsan a dapibus eget, interdum sit amet nunc. Proin in elementum justo, vel lacinia arcu. Pellentesque egestas elit ac iaculis euismod.</p>
+              <a routerLink="a-propos" id="btn-accueil-info" class="btn btn-primary">A propos de nous</a>
+          </div>
+      </div>
+  </div>
+  <div id="titre-article">
+      <h1>Nos Articles</h1>
+  </div>
+  <div id="recherche-article">
+      <label class="qst-article">Quel article recherchez vous ?</label>
+      <input type="text" (input)="updateSearchTerm($event)" placeholder="Rechercher par nom">
+  </div>
+  <div id="tri-article">
+      <label class="qst-article">Changer l'ordre de tri</label>
+      <button (click)="toggleSort()"><img src="../../assets/img/rafraichir.png" width="20" height="20"></button>
+    </div>
+  <div id="placement-produits-accueil">
+      <div id="produits-accueil">
+        <div *ngFor="let product of products | sortByName:searchTerm | sortByPrice:reverseSort"   class="card bg-prd-accueil" style="width: 18rem;">
+          <img src={{product.image}} class="card-img-top" alt="">
+          <div class="card-body">
+              <div class="plcm-top-card">
+                  <h5 class="card-title">{{product.nom}}</h5>
+                  <h5 class="price-card">{{product.price}}€</h5>
+              </div>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus turpis in hendrerit rutrum. 
+              Donec rhoncus odio ac luctus vehicula. Quisque commodo est tellus, sollicitudin iaculis lacus lobortis at</p>
+            <a [routerLink]="['/product-detail', product.id]" class="btn-produits-accueil btn btn-primary">Voir le produit</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</div>

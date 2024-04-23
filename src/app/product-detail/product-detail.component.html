@@ -1,0 +1,27 @@
+<div id="pos-prod-detail">
+    <div id="p-product-detail">
+        <div id="p-gauche">
+            <img src={{product.image}} width="300" height="350">
+        </div>
+        <div id="p-droite">
+            <h2>Figurine de {{product.nom}}</h2>
+            <hr width="800px"> 
+            <h2>{{product.price}}€</h2>
+            <p>{{product.description}}</p>
+            <h3>Informations supplémentaires</h3>
+            <ul>
+                <li><strong>Thème :</strong> {{product.theme}}</li>
+                <li><strong>Couleur :</strong> {{product.couleur}}</li>
+                <li><strong>Matériaux :</strong> {{product.materiaux}}</li>
+                <li><strong>Personnage de dessin animé :</strong> {{product.personnage}}</li>
+                <li><strong>Assemblage requis :</strong> {{product.assemblage}}</li>
+                <li><strong>Âge minimum <br> recommandé par le <br> fabricant (MOIS) :</strong> {{product.agemin}}</li>
+                <li><strong>Piles requises ?</strong> {{product.pile}}</li>
+            </ul>
+            <div id="btn-achat-panier">
+                <button id="achat">Acheter</button>
+                <button id="panier">Ajouter au panier</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+#plcm-info-accueil{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-title{
+    padding-bottom: 15px;
+}
+
+#btn-accueil-info{
+    background-color: #151217;
+    color: white;
+    border-color: black;
+    margin-top: 10px;
+}
+
+
+.card-title{
+    padding-top: 20px;
+}
+
+#produits-accueil .card-body{
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: #FDD90B;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.card-img-top{
+    border: 1px solid black; 
+}
+
+#produits-accueil{
+    display: flex;
+    flex-direction: row;
+}
+
+#placement-produits-accueil{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 13%;
+}
+
+#produits-accueil .bg-prd-accueil{
+    margin-left: 100px;
+}
+
+.btn{
+    margin-bottom: 20px;
+}
+
+.bg-prd-accueil{
+    margin-bottom: 80px;
+}
+
+.plcm-top-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-card{
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+#titre-article{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.qst-article{
+    padding-right: 10px;
+}
+
+#recherche-article{
+    margin-left: 19%;
+}
+
+#tri-article{
+    margin-left: 19%;
+    padding-top: 40px;
+}
+
+#tri-article button {
+    width: 30px;
+    height: 32px;
+    padding-left: 4px;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 900px){
+    #produits-accueil{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #placement-produits-accueil{
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+        width: 70%;
+    }
+}

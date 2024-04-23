@@ -1,0 +1,137 @@
+#formulaire {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    min-height: 100vh;
+}
+
+#form-ext{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 60px;
+    height: 680px;
+    font-weight: bold;
+}
+
+#top-form{
+    display: flex;
+    flex-direction: row;
+}
+
+#top-form #space { 
+    margin-left: 30px;
+}
+
+#top-form label{
+    padding-right: 10px;
+}
+
+#top-form input {
+    height: 40px;
+    border-radius: 7px;
+    padding-left: 8px;
+}
+
+#nom{
+    display: flex;
+    flex-direction: column;
+}
+
+#nom input {
+    width: 230px;
+}
+
+#prenom{
+    display: flex;
+    flex-direction: column;
+}
+
+#prenom input{
+    width: 230px;
+    margin-left: 30px;
+}
+
+#mid-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#mid-form label{
+    margin-top: 30px;
+}
+
+#i-mail{
+    width: 70%;
+}
+
+#i-tel{
+    width: 50%;
+}
+
+#mid-form input {
+    height: 40px;
+    border-radius: 7px;
+    padding-left: 8px;
+}
+
+textarea{
+    width: 540px;
+    margin-top: 30px;
+    height: 230px;
+    padding-left: 8px;
+}
+
+#btn-form{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin-top: 15px;
+    height: 40px;
+}
+
+button:hover{
+    transform: scale(1.03);
+}
+
+@media(max-width: 900px){
+    #form-ext {
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+
+    #top-form, #mid-form {
+        flex-direction: column;
+    }
+
+    #top-form #space {
+        margin-left: 0;
+    }
+
+    #nom, #prenom {
+        width: 100%;
+    }
+
+    #nom input, #prenom input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #mid-form label {
+        margin-top: 20px;
+    }
+
+    #i-mail, #i-tel {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}

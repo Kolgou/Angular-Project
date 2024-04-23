@@ -1,0 +1,8 @@
+#footer{
+    position: sticky;
+    top: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
